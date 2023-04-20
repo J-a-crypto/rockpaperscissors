@@ -1,7 +1,31 @@
+.wins {
+  text-align:right;
+}
+.loses{
+  text-align:left;
+}
+.top{
+  display:flex;
+  justify-content: space-between;
+}
+
 .row {
   text-align: center;
 }
-.choices {
+#choices {
   display: flex;
   justify-content: space-between;
+}
+body {
+  background-color: #dbcccc;
+}
+.cbutton{
+  display: flex;
+  justify-content: space-around;
+}
+.RSP{
+  width:150px;
+}
+.choice {
+  width:200px;
 }

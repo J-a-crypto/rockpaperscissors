@@ -6,30 +6,82 @@
     <link type="text/css" rel="stylesheet" href="css/style.css" />
   </head>
 
-  <body>
+  <body onload="showAlert()">
+    <!-- HTML/CSS options: In the div below. 
+        1. In the header tag, change a title.
+        2. In a paragraph tag, add instructions on how to play the game.
+        3. Change the RPS image.
+        4. Style your page with colors, fonts, etc.
+     --> 
+    <div class="top">
+    <h3 class= "loses">
+      Losses:
+    </h3>
+    <h3 class="wins">
+      Wins:
+    </h3>
+     </div>
     <div class="row">
       <h1>Rock Paper Scissors</h1>
       <img src="http://www.coltnews.com/wp-content/uploads/2016/04/RPS.png" />
 
       <h3>Please Submit Your Choice Below</h3>
-      <div>
-        <input class="input" />
-        <button class="play">play!</button>
-      </div>
 
-      <div class="choices" class="row">
+      <div>
+        <input id="input" />
+        <button id="shoot">Shoot!</button>
+      </div>
+      <h3>
+        Here are buttons for those that don't feel like typing!
+      </h3>
+<div class="cbutton">
+  
+      <button class ="Rock choice">
+        <img
+          class="RSP"
+          src="https://cdn.glitch.com/8f619ab1-7516-4d68-b985-e8880a8d5ce1%2Frocky%5B1%5D.svg?v=1611701111480"
+        />
+        <p>
+          Rock
+        </p>
+      </button>
+      <button class ="Scissor choice">
+        <img
+          class="RSP"
+          src="https://st.depositphotos.com/1024768/2970/v/950/depositphotos_29709915-stock-illustration-scissors-clip-art-cartoon-illustration.jpg"
+        />
+        <p>
+          Scissors
+        </p>
+      </button>
+      <button class ="Paper choice">
+        <img
+          class="RSP"
+          src="https://www.clipartkey.com/mpngs/m/25-259242_collection-of-notebook-loose-leaf-paper-cartoon.png"
+        />
+        <p>
+          Paper
+        </p>
+      </button>
+    </div>
+      <div id="choices" class="row">
         <div>
           <h4>User Choice</h4>
-          <p class="userChoice"></p>
+          <p id="userChoice"></p>
         </div>
         <div>
           <h4>Computer Choice</h4>
-          <p class="computerChoice"></p>
+          <p id="computerChoice"></p>
         </div>
       </div>
-      <div class="result"></div>
+      <div id="result"></div>
     </div>
 
+  <script>
+  function showAlert() {
+    alert ("Welcome! Remember that Scissors cut Paper / Paper covers Rock / Rock destroys Scissors. Have fun! ");
+  }
+  </script>
     <!-- Link JQuery here -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <!-- Link script.js here -->
